@@ -1,0 +1,62 @@
+body {
+
+	height: auto;
+	width: 500px;
+	background-image: linear-gradient(to bottom, #37968300, #5CDB95AF);
+	background-color: #379683;
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: #EDF5E1 ;
+	font-family: 'Quicksand', sans-serif;
+ 	font-weight: bold;
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+	word-wrap: break-word;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 500;
+}
+div#secondary-body{
+  height: auto;
+  width: 400px;
+  padding: 20px;
+}
+div#secondary-body::after {
+  content: "";
+  background: url(dog-newspaper.png);
+	background-size: 110%;
+	background-repeat: no-repeat;
+	background-position: center;
+  opacity: 0.10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.halt-text{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.hyperlink-area{
+	transition: transform 0.5s ease-in;
+    padding: 5px;
+}
+
+.hyperlink-area:hover{
+	transform: scale(1.1);
+}
+
+a:any-link{
+	color: #EDF5E1;
+	font-weight: 700;
+	letter-spacing: 2px;
+	word-wrap: break-word;
+    font-size: 15px;
+}

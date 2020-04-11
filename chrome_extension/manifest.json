@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Left, Right and Center",
+    "version": "0.0.1",
+    "permissions": ["https://us-central1-la-hacks-2020-272516.cloudfunctions.net/testDrive", 
+      "https://us-central1-la-hacks-272508.cloudfunctions.net/update-database-p1", 
+      "https://us-central1-la-hacks-272508.cloudfunctions.net/update-database-p2", 
+      "https://us-central1-la-hacks-272508.cloudfunctions.net/retrieve-from-database",
+  "tabs",
+  "notifications",
+          "http://*/",
+          "https://*/", "identity", "identity.email"],
+  "background": {
+      "scripts":["background.js"],
+      "persistent": false
+    },
+    "description": "Broaden your media consumption!",
+    "icons": {"16": "icon16.png",
+              "48": "icon48.png",
+              "128": "icon128.png" },
+    "browser_action": {
+     "default_icon": "tab-icon.png",
+     "default_title": "Broaden your media consumption!",
+     "default_popup": "chrome-extension.html"
+    }
+  }
